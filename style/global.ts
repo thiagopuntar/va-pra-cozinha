@@ -7,8 +7,8 @@ export default createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: ${(props) => props.theme.colors.secondary};
-    background-color: ${(props) => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.black};
+    background-color: ${(props) => props.theme.colors.white};
   }
 
   html {

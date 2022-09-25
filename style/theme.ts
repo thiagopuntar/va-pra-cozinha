@@ -1,9 +1,18 @@
+const SPACING_BASE = 8;
+
 const theme = {
   colors: {
-    primary: "#161616",
-    secondary: "#c2bdaa",
+    primary: "#c2bdaa",
+    black: "#161616",
+    white: "#FFFFFF",
   },
-  fonts: {},
+  fonts: {
+    family: {
+      body: "Arial",
+      title: "Times New Roman",
+    },
+  },
+  spacing: (level = 1) => `${level * SPACING_BASE}px`,
 };
 
 export default theme;
