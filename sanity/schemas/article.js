@@ -9,32 +9,27 @@ export default {
       title: "Title",
     },
     {
-      name: "images",
-      type: "array",
-      title: "Images",
-      of: [
+      name: "slug",
+      type: "slug",
+      title: "Slug",
+    },
+    {
+      name: "image",
+      type: "image",
+      title: "Hero Image",
+      fields: [
         {
-          type: "image",
-          fields: [
-            {
-              name: "caption",
-              title: "Caption",
-              type: "string",
-              options: { isHighlighted: true },
-            },
-          ],
+          name: "caption",
+          title: "Caption",
+          type: "string",
+          options: { isHighlighted: true },
         },
       ],
     },
     {
       name: "abstract",
-      type: "array",
+      type: "string",
       title: "Abstract",
-      of: [
-        {
-          type: "block",
-        },
-      ],
     },
     {
       name: "content",

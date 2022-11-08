@@ -9,11 +9,6 @@ export default {
       title: "Title",
     },
     {
-      name: "slug",
-      type: "slug",
-      title: "Slug",
-    },
-    {
       name: "avatar",
       type: "image",
       title: "Avatar",
@@ -66,8 +61,8 @@ export default {
                   preview: {
                     select: {
                       title: "ingredient.name",
-                      amount: "amount",
-                      unit: "unit",
+                      amount: "siAmount",
+                      unit: "siUnit",
                     },
                     prepare({ title, amount, unit }) {
                       return {
@@ -78,18 +73,42 @@ export default {
                   },
                   fields: [
                     {
-                      name: "amount",
+                      name: "siAmount",
                       type: "number",
-                      title: "Amount",
+                      title: "SI Amount",
                     },
                     {
-                      name: "unit",
+                      name: "siUnit",
                       type: "string",
-                      title: "Unit",
+                      title: "SI Unit",
                       options: {
                         list: [
-                          { title: "xic", value: "cup" },
                           { title: "g", value: "g" },
+                          { title: "L", value: "L" },
+                          { title: "mL", value: "mL" },
+                        ],
+                      },
+                    },
+                    {
+                      name: "homeAmount",
+                      type: "number",
+                      title: "Homemade Amount",
+                    },
+                    {
+                      name: "homeUnit",
+                      type: "string",
+                      title: "Homemade Unit",
+                      options: {
+                        list: [
+                          { title: "cc", value: "c. chá" },
+                          { title: "ccf", value: "c. café" },
+                          { title: "cs", value: "c. sopa" },
+                          { title: "1/2 xic", value: "1/2 xic" },
+                          { title: "1/3 xic", value: "1/3 xic" },
+                          { title: "1/4 xic", value: "1/4 xic" },
+                          { title: "xic", value: "xic" },
+                          { title: "un", value: "un" },
+                          { title: "qb", value: "qb" },
                         ],
                       },
                     },
