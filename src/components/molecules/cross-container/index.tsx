@@ -32,13 +32,13 @@ const ChildrenContainer = styled.div`
 
 const TopRight = styled.div`
   display: none;
+  grid-area: topRight;
   padding: 1em;
 
   ${breakAt("md")} {
     display: flex;
     text-align: center;
     align-items: center;
-    grid-area: topRight;
     border-bottom: 1px solid ${({ theme }) => theme.colors.primary};
   }
 `;

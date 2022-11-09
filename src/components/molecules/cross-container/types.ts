@@ -1,8 +1,8 @@
-import { ReactElement } from "react";
+import { ReactNode } from "react";
 
 export type CrossContainerProps = {
-  topLeft: ReactElement;
-  topRight: ReactElement;
-  children: ReactElement;
-  aside: ReactElement;
+  topLeft: ReactNode;
+  topRight: ReactNode;
+  children: ReactNode;
+  aside: ReactNode;
 };
